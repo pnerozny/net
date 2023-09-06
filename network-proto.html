@@ -1,0 +1,192 @@
+<!doctype html>
+<html >
+<head>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!--[if lt IE 9]>
+                <script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+        <![endif]-->
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="Content-Style-Type" content="text/css" />
+
+    <link href="https://fonts.googleapis.com/css?family=Domine|Montserrat" rel="stylesheet"> 
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+    <!-- <link rel="stylesheet" type="text/css" href="template.css" /> -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/diversen/pandoc-bootstrap-adaptive-template@959c3622/template.css" />
+
+    <link href="https://vjs.zencdn.net/5.4.4/video-js.css" rel="stylesheet" />
+
+    <script src="https://code.jquery.com/jquery-2.2.1.min.js"></script>
+    <!-- <script type='text/javascript' src='menu/js/jquery.cookie.js'></script> -->
+    <!-- <script type='text/javascript' src='menu/js/jquery.hoverIntent.minified.js'></script> -->
+    <!-- <script type='text/javascript' src='menu/js/jquery.dcjqaccordion.2.7.min.js'></script> -->
+    <!-- <link href="menu/css/skins/blue.css" rel="stylesheet" type="text/css" /> -->
+    <!-- <link href="menu/css/skins/graphite.css" rel="stylesheet" type="text/css" /> -->
+    <!-- <link href="menu/css/skins/grey.css" rel="stylesheet" type="text/css" /> -->
+    <!-- <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script> -->
+    <!-- <script src="script.js"></script> -->
+    <!-- <script src="jquery.sticky-kit.js "></script> -->
+    <script type='text/javascript' src='https://cdn.jsdelivr.net/gh/diversen/pandoc-bootstrap-adaptive-template@959c3622/menu/js/jquery.cookie.js'></script>
+    <script type='text/javascript' src='https://cdn.jsdelivr.net/gh/diversen/pandoc-bootstrap-adaptive-template@959c3622/menu/js/jquery.hoverIntent.minified.js'></script>
+    <script type='text/javascript' src='https://cdn.jsdelivr.net/gh/diversen/pandoc-bootstrap-adaptive-template@959c3622/menu/js/jquery.dcjqaccordion.2.7.min.js'></script>
+
+    <link href="https://cdn.jsdelivr.net/gh/diversen/pandoc-bootstrap-adaptive-template@959c3622/menu/css/skins/blue.css" rel="stylesheet" type="text/css" />
+    <link href="https://cdn.jsdelivr.net/gh/diversen/pandoc-bootstrap-adaptive-template@959c3622/menu/css/skins/graphite.css" rel="stylesheet" type="text/css" />
+    <link href="https://cdn.jsdelivr.net/gh/diversen/pandoc-bootstrap-adaptive-template@959c3622/menu/css/skins/grey.css" rel="stylesheet" type="text/css" />
+    <link href="https://cdn.jsdelivr.net/gh/ryangrose/easy-pandoc-templates@948e28e5/css/elegant_bootstrap.css" rel="stylesheet" type="text/css" />
+  
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+  
+    <script src="https://cdn.jsdelivr.net/gh/diversen/pandoc-bootstrap-adaptive-template@959c3622/script.js"></script>
+  
+    <script src="https://cdn.jsdelivr.net/gh/diversen/pandoc-bootstrap-adaptive-template@959c3622/jquery.sticky-kit.js"></script>
+    <meta name="generator" content="pandoc" />
+  <title>síťové protokoly</title>
+  <style type="text/css">code{white-space: pre;}</style>
+  <style type="text/css">body { font-family: Domine, Georgia, Palatino, 'Palatino Linotype', Times, 'Times New Roman', serif} h1, h2, h3, h4, h5, h6 { font-family: Montserrat, sans }</style>
+</head>
+<body>
+
+    
+    <div class="container mt-5">
+      <div class="row">
+            <div class="col-12">
+
+      
+      <h1 id="síťové-protokoly">síťové protokoly</h1>
+<ul>
+<li><strong>zařízení</strong>
+<ul>
+<li>Aktivní síťové prvky - basically všechny zařízení
+<ul>
+<li>Repeater (opakovač)
+<ul>
+<li>pracuje s elektrickým signálem</li>
+<li>příjmá zkreslený, zašuměný, počkozený elektrický signál</li>
+<li>vysílá opravený, zesílený a správně načasovaný signál</li>
+<li>umožňuje zvýšit dosah elektrického signálu bez ztráty kvality</li>
+</ul></li>
+<li>Hub (rozbočovač)
+<ul>
+<li>umožňuje větvení sítě</li>
+<li>veškerá příchozí data rozešle do všech ostatních portů</li>
+<li>přesně z toho důvodu není vždy ideální, protože nechceš vždy data
+poslat do všech počítačů</li>
+</ul></li>
+<li>Switch (přepínač)
+<ul>
+<li>propojuje jednotlivé části sítě</li>
+<li>je na něj připojeno více zařízení, ale umožňuje poslat data z
+jednoho zařízení do druhého bez sdílení se všemi zařízeními</li>
+<li>-&gt; lepší bezpečnost sítě</li>
+</ul></li>
+<li>Bridge (most)
+<ul>
+<li>spojuje dvě části sítě na druhé vrstvě OSI modelu</li>
+<li>v paměti má tabulku MAC adres rozdělenou na “segmenty” (prostě různý
+grupy zařízení) a mezi těma segmentama přeposílá data</li>
+</ul></li>
+<li>Router (směrovač)
+<ul>
+<li>přeposílá data k jejich cíli ve třetí vrstvě OSI modelu</li>
+<li>může to dělat skoro každej počítač, ale často se používaj routery se
+specialnim HW a SW</li>
+</ul></li>
+</ul></li>
+<li>Pasivní síťové prvky
+<ul>
+<li>kabely</li>
+<li>konektory</li>
+<li>zásuvky</li>
+<li>rozvaděče (idk)</li>
+</ul></li>
+</ul></li>
+<li><strong>protokoly</strong>
+<ul>
+<li>Sada protokolů TCP/IP
+<ul>
+<li><em>IP, IPv4, IPv6</em> - ip adresy ruznejch verzi</li>
+<li><em>TCP, UDP</em> - protokoly pro přenos dat mezi počítačema</li>
+<li><em>DNS</em> - systém doménových jmen - abys mohl do prohlizece psat
+google.com misto IP adresy</li>
+<li><em>DHCP</em> - vubec netusim</li>
+<li><em>HTTP(S)</em> - protokol pro sdileni webovejch stranek (S kdyz je
+zabezpecenej)</li>
+<li><em>SMTP</em> - protokol pres kterej se posila email</li>
+<li><em>SSH</em> - šifrované vzdálené připojení k počítači, lze přes to
+i posílat soubory (ukazu)</li>
+<li>…</li>
+</ul></li>
+</ul></li>
+<li><strong>rozdělení</strong> sítí
+<ul>
+<li>podle velikosti
+<ul>
+<li><em>LAN</em> (local) - do stovek metrů, umožňují sdílet tiskárny,
+soubory a zpravy apod</li>
+<li><em>MAN</em> (metropolitan) - do několika kilometrů, dneska se
+podobaj LAN, jsou i veřejný někdy</li>
+<li><em>WAN</em> (world) - po celym světě, zařízení WAN jsou jednotlivé
+MAN a WAN připojený přes nějakej výkonnej počítač co všechno možný řídí
+a přeposílá (asi ne vzdycky), internet je v zásadě WAN, ale asi může
+bejt víc WANů, takže se po WANu můžou posílat zpávy, soubory, přístup na
+stránky, …</li>
+<li><em>PAN</em> (personal)</li>
+</ul></li>
+<li>podle “topologie”
+<ul>
+<li><em>Kružnice</em> - lehký rozšířit, málo drátů</li>
+<li><em>Sběrnice</em> - acnient, vsechny zarizeni pripojeny na jeden
+spesl kabel. Kdyz vypadne stanice tak to neni problem ale kdyz vypadne
+kabel je to vpici</li>
+<li><em>Hvězda</em> - zarizeni ve stredu je kinda like a server co hodne
+preposila, kdyz vypadne je to blby ale je hodne lehky k nemu pripojit
+dalsi</li>
+<li>jakejkoliv jinej obrázek, klidně jen rovná čára, tyhle jsou jen ty
+“nejznámější”</li>
+</ul></li>
+<li>propojení sítí LAN
+<ul>
+<li>máme několik sítí LAN a chceš aby mohli okmunikovat lidi mezi sítěma
+nebo sítě mezi sebou</li>
+<li>a jedinej trik co se udělá je, že si představíš celou síť jako jedno
+zařízení a zase je zapojíš do “topologií” co znáš</li>
+<li>takže můžeš mít LANky ve hvězdě nebo v kružnici nebo tak</li>
+</ul></li>
+<li>podle úlohy zařízení
+<ul>
+<li><em>client/server</em> - máš servery třeba lolka a k nim se
+připojujou hráči a hrajou, posílaj tam informace a server posílá jiný
+informace zpátky</li>
+<li><em>peer to peer</em> - to je složitější, v roce 2023 je vic zpusobu
+jak to řešit, ale to zakladni si muzes predstavit ze kazdej ucastnik je
+zaroven klient a zaroven server a ze jsou vsichni na stejny urovni
+(počítač máš furt zaplej a někomu může něco posílat a zároveň můžeš na
+ten počítač přijít a říct jinýmu počítači ať ti něco pošle)</li>
+</ul></li>
+</ul></li>
+<li><strong>OSI</strong> model
+<ul>
+<li><em>fyzická</em> vrstva - kabely, elektronika - Hub, Repeater</li>
+<li><em>linková</em> vrstva - spojení mezi dvěma sousedními systémy -
+Bridge a Switch</li>
+<li><em>síťová</em> vrstva - směrování a adresování - router</li>
+<li><em>transportní</em> vrstva - zajišťuje přenos dat - protokoly TCP,
+UDP</li>
+<li><em>relační</em> vrstva - relace je aktuální spojení mezi dvěma
+zařízeníma, se propojí a dokud jsou propojený a dokud jsou propojeni tak
+je to ono</li>
+<li><em>prezentační</em> vrstva - transformuje data který se posílaj v
+síti do nějakejch předepsanejch trvarů a blbostí</li>
+<li><em>aplikační</em> vrstva - umožňuje aplikacím využívat síť -
+všechny ostatní protokoly HTTP(S), FTP, DNS, SSH, SMTP</li>
+</ul></li>
+</ul>
+            </div>
+    </div>
+  </div>
+  <script src="https://vjs.zencdn.net/5.4.4/video.js"></script>
+
+</body>
+</html>
